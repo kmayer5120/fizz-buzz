@@ -13,7 +13,7 @@ let fizzBuzz = () => {
     //loop 20 times
     for (let i = 1; i <= 20; i++) {
         //initialize outputWord string variable
-        let outputWord = "";
+        let outputWord = "foo";
 
         if (i % 2 === 0) {
             //Number is even: fizz
@@ -21,10 +21,8 @@ let fizzBuzz = () => {
         } else if (i % 5 === 0) {
             //Number is divisible by 5: buzz
             outputWord = "buzz";
-        } else if (i % 2 !== 0 && i % 5 !== 0) {
-            //Neither divisible by 0 nor 5: foo
-            outputWord = "foo";
         }
+
         console.log(`Counter: ${i} ---- Word: ${outputWord}`);
     }
 }
